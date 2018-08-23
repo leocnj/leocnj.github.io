@@ -49,7 +49,6 @@
         <div class="col s12 m6">
           <div class="card">
             <div id="result-container" class="card-content">
-
               <div class="chart-result-profile-webcam" style="display: block; text-align: center;">
                 <canvas id="face_profile_chart" width="64" height="64"></canvas>
                 <canvas id="face_profile_greyscale" width="64" height="64" style="display: none;"></canvas>
@@ -64,18 +63,16 @@
 
 
         <!-- information -->
-        <div class="image-container">
+        <div class="col s12 m6">
+         <div class="image-container">
            <img src="images/FER2013.png" 
            alt="FER sample images" 
            style="width:320px;height:240px;">
-        </div>
-
-        <div class="col s12 m6">
-          <div class="card">
+         </div>
+         <div class="card-content">
             Compared to face-classification-js, this repo uses a new emotion model
             <li>based on Google mobilenet V2</li>
             <li>trained on both FER2013 and AFEW data sets</li>
-            
           </div>
         </div>
       </div>
