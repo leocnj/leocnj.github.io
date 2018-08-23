@@ -1,7 +1,7 @@
 var MODEL_EMOTION;
 var IS_MODEL_EMOTION_LOADED = false;
 initEmotion = async () => {
-  MODEL_EMOTION = await tf.loadModel("./model/emotion/model.json");
+  MODEL_EMOTION = await tf.loadModel("./model/mobilenet/model.json");
   console.log("Model Emotion Loaded");
 
   //Warm up network

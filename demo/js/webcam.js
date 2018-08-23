@@ -12,7 +12,7 @@ var EXPAND_BOX = {'x': 0, 'y': 0, 'w': 0, 'h': 0};
 var TRACKER = new tracking.ObjectTracker(['face']);
 TRACKER.setEdgesDensity(0.1);
 TRACKER.setInitialScale(4);
-TRACKER.setStepSize(1.5);
+TRACKER.setStepSize(2.5);
 
 $(document).ready(function() {
 
@@ -109,7 +109,6 @@ function updateResultChart(result_emotion) {
     
     
     CHART_EMOTION.data.datasets[0].label = 'Emotion: ' + result_emotion.label;
-    result_emotion.result[4] *= 0.1; // clip sad prediction
     CHART_EMOTION.data.datasets[0].data = result_emotion.result;
     CHART_EMOTION.update(50);
 }
